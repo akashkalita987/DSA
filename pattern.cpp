@@ -152,8 +152,16 @@ void print14(int n){
         cout<<endl;
     }
 }
+void print15(int n){
+    for(int i=0; i<n; i++){
+        for(char ch='A'; ch<='A'+(n-i-1);ch++){
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+}
 int main(){
     int n = 5;
-    print14(n);
+    print15(n);
     return 0;
 }
