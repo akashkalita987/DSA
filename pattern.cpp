@@ -160,8 +160,17 @@ void print15(int n){
         cout<<endl;
     }
 }
+void print16(int n){
+    for(int i=0;i<n; i++){
+        char ch='A'+i;
+        for(int j=0; j<=i; j++){
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+}
 int main(){
     int n = 5;
-    print15(n);
+    print16(n);
     return 0;
 }
