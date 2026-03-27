@@ -169,8 +169,30 @@ void print16(int n){
         cout<<endl;
     }
 }
+void print17(int n){
+
+    for(int i=0;i<n;i++){
+        //space
+        for(int j =0; j<n-i-1;j++){
+            cout<<" ";
+        }
+        //char
+        char ch='A';
+        int BracPoi = (2*i+1)/2;
+        for(int j=0; j<2*i+1; j++){
+            cout<<ch;
+            if(j<= BracPoi)ch++;
+            else ch--;
+        }
+        //space
+        for(int j =0; j<n-i-1;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
 int main(){
     int n = 5;
-    print16(n);
+    print17(n);
     return 0;
 }
