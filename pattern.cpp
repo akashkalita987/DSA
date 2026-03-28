@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm> 
 using namespace std;
 void print1(int n){
     for(int i = 0; i<=n; i++){
@@ -268,8 +269,21 @@ void print21(int n){
         cout<<endl;
     }
 }
+void print22(int n){
+    for(int i = 0;i<2*n-1;i++){
+        for(int j = 0;j<2*n-1;j++){
+            int top = i;
+            int left = j;
+            int right= (2*n - 2) - j;
+            int down= (2*n - 2) - i;
+            int closestEdge= min({top,down,left,right});
+            cout<<(n-closestEdge);
+        }
+        cout<<endl;
+    }
+}
 int main(){
-    int n = 5;
-    print21(n);
+    int n = 4;
+    print22(n);
     return 0;
 }
