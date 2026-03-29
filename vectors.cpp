@@ -64,6 +64,12 @@ void explainVector(){
     //{10, 20, 12, 23, 35}
     v.erase(v.begin()+2, v.begin()+4);
     // new vector will be{10, 20,35} it refers as(start, end)
+
+    //insertion in vector
+
+    vector<int>(2,100);//{100, 100}
+    v.insert(v.begin(),300);//{300, 100, 100}
+    v.insert(v.begin()+1, 2, 10);//{300, 10, 10, 100, 100}
 }   
 int main(){
     explainVector();
