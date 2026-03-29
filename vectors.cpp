@@ -25,6 +25,15 @@ void explainVector(){
     vector<int>::iterator it = v.begin();
     it++;
     cout<<*(it)<<" ";
+
+    it = it+2;
+    cout<<*(it)<<" ";
+
+    vector<int>::iterator it = v.end();
+
+    vector<int>::reverse_iterator it2 = v.rend();
+
+    vector<int>::reverse_iterator it3 = v.rbegin();
 }
 int main(){
     explainVector();
