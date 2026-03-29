@@ -54,6 +54,16 @@ void explainVector(){
     for (auto it: v){
         cout<<it<<" ";
     }
+
+    //deleting in values from vectors
+
+    //{10, 20, 12, 23}
+    v.erase(v.begin()+1);
+    //20 will get erased new vector will {10, 12, 23}
+
+    //{10, 20, 12, 23, 35}
+    v.erase(v.begin()+2, v.begin()+4);
+    // new vector will be{10, 20,35} it refers as(start, end)
 }   
 int main(){
     explainVector();
