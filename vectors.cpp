@@ -38,6 +38,12 @@ void explainVector(){
     cout<<v[0]<<" "<<v.at(0);
 
     cout<<v.back()<<" ";
+
+    //syntax to print a vector
+
+    for(vector<int>::iterator it =v.begin(); it !=v.end(); it++){
+        cout<<*(it)<<" ";
+    }
 }
 int main(){
     explainVector();
