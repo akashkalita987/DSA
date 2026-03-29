@@ -44,7 +44,17 @@ void explainVector(){
     for(vector<int>::iterator it =v.begin(); it !=v.end(); it++){
         cout<<*(it)<<" ";
     }
-}
+
+    //auto 
+
+    for(auto it = v.begin(); it!= v.end(); it++){
+        cout<<*(it)<<" ";
+    }
+
+    for (auto it: v){
+        cout<<it<<" ";
+    }
+}   
 int main(){
     explainVector();
     return 0;
