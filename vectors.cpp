@@ -34,6 +34,10 @@ void explainVector(){
     vector<int>::reverse_iterator it2 = v.rend();
 
     vector<int>::reverse_iterator it3 = v.rbegin();
+
+    cout<<v[0]<<" "<<v.at(0);
+
+    cout<<v.back()<<" ";
 }
 int main(){
     explainVector();
