@@ -27,8 +27,11 @@ void explainSet(){
     auto it1 = st.find(2);
     auto it2 = st.find(4);
     st.erase(it1, it2);//after erase {1,4,5}[first, last]
+
+    auto it = st.lower_bound(2);
+    auto it = st.upper_bound(3);
 }
 int main(){
-    
+     explainSet();
     return 0;
 }
