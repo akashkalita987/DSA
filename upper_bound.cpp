@@ -10,6 +10,9 @@ int main(){
     cin>>X;
     int ind = upper_bound(a, a+n, X) - a;
 
-    cout<<"Upper bound index is:"<<ind<<"\n";
+    if(ind != n && a[ind] == X){
+        cout<<"Upper bound index is:"<<ind<<"\n";
+    }
+    else cout<<"-1";
     return 0;
 }
