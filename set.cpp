@@ -19,6 +19,14 @@ void explainSet(){
     st.erase(5);
 
     int cnt = st.count(1);
+
+    auto it= st.find(3);
+    st.erase(it);
+
+    //{1,2,3,4,5}
+    auto it1 = st.find(2);
+    auto it2 = st.find(4);
+    st.erase(it1, it2);//after erase {1,4,5}[first, last]
 }
 int main(){
     
