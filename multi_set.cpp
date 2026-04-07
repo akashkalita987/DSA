@@ -19,6 +19,15 @@ void explainMulti(){
     //only a single one erased
     ms.erase(ms.find(1));
     
-    ms.erase(ms.find(1), ms.find(1)+2);
+    auto it = ms.find(1);
+    if (it != ms.end()) {
+        auto it2 = std::next(it, 2);
+        ms.erase(it, it2);
+    }
     //rest all function same as set
+    cout<<"complited"<<endl;
+}
+int main(){
+    explainMulti();
+    return 0;
 }
