@@ -27,4 +27,7 @@ void explainMap(){
     cout<<(*it).second;
 
     auto it = mpp.find(5);
+
+    auto it = mpp.lower_bound(2);
+    auto it = mpp.upper_bound(3);
 }
