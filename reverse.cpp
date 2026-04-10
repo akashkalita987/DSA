@@ -14,5 +14,6 @@ int revNo(int n){
 int main(){
     int n = 95372;
     cout<<"\nThe reverse is:"<<revNo(n);
+    cout<<"\nThe number was:"<<n;
     return 0;
 }
