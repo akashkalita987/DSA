@@ -1,16 +1,17 @@
 #include<iostream>
 using namespace std;
 
-void print(){
-    int n = 10;
-    for(int i =1; i<=n; i++){
-    cout<<"1"<<endl;
-    break;
-    }
-    print();
-    
+void print(int current, int n){
+    if(current > n) return;
+    cout<<current<<endl;
+    current++;
+    print(current, n);
 }
+
 int main(){
-    print();
+    int n = 0;
+    cout << "Enter a number: ";
+    cin >> n;
+    print(0, n);
     return 0;
 }
