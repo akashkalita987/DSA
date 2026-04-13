@@ -3,7 +3,7 @@ using namespace std;
 
 void sm(int i, int sum){
     if(i<1) {
-        cout<<sum<<endl;;
+        cout<<sum<<endl;
         return;
     }
     sm(i-1,sum+i);
