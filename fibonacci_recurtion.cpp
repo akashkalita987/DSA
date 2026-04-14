@@ -2,15 +2,14 @@
 using namespace std;
 
 int fibo(int n){
-    // Base Case: If n is 0 or 1, return n
+    
     if(n <= 1) return n; 
     
     int last, slast;
-    // Recursive calls
+
     last = fibo(n - 1);
     slast = fibo(n - 2);
-    
-    // Return the sum to the previous caller
+
     return last + slast;
 }
 
