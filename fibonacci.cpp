@@ -12,13 +12,16 @@ int main(){
             cout<<t1<<",";
             continue;
         }
+
         if(i==2){
             cout<<t2<<",";
             continue;
         }
+
         nextTerm= t1+t2;
         t1=t2;
         t2=nextTerm;
+        
     cout<<nextTerm<<(i==n ? "" :  ",");
     }
     cout<<endl;
