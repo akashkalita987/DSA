@@ -12,6 +12,10 @@ void print(int ind, vector<int>&ds, int arr[], int n){
     }
 
     ds.push_back(arr[ind]);
+    print(ind+1, ds, arr, n);
+    ds.pop_back();
+
+    print(ind+1, ds, arr, n);
 }
 int main(){
     int arr[] = {3,1,2};
