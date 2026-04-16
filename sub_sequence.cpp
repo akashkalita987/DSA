@@ -18,6 +18,8 @@ void print(int ind, vector<int>&ds, int arr[], int n){
     print(ind+1, ds, arr, n);
     ds.pop_back();
 
+
+    
     print(ind+1, ds, arr, n);
 }
 int main(){
