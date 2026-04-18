@@ -21,6 +21,8 @@ void sEt(){
 void pAir(){
     pair<string, string>p = {"hello","world"};
     cout<<p.first<<" "<<p.second<<endl;
+    swap(p.first,p.second);
+    cout<<p.first<<" "<<p.second<<endl;
 }
 
 void liSt(){
