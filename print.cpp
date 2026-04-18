@@ -16,7 +16,12 @@ void sEt(){
         cout<<it<<endl;
     }
 }
+
+void pAir(){
+    pair<string, string>p = {"hello","world"};
+    cout<<p.first<<" "<<p.second<<endl;
+}
 int main(){
-    sEt();
+    pAir();
     return 0;
 }
