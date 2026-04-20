@@ -6,6 +6,8 @@ int main(){
     int n;
     cout<<"\nEnter the number";
     cin>>n;
+
+    
     int original = n;
     int digitCount = 0;
     int temp = n;
