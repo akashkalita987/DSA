@@ -1,6 +1,7 @@
 #include<iostream>
 #include<algorithm>
 using namespace std;
+//main function
 int main(){
     int a= 5;
     int b= 6;
