@@ -4,6 +4,8 @@
 #include<vector>
 #include<list>
 using namespace std;
+
+//printing a vector
 void vec(){
     vector<int>p = {1,2,3,4,5,6,7,8};
     for(auto it:p){
@@ -11,6 +13,7 @@ void vec(){
     }
 }
 
+//printing a set
 void sEt(){
     set<int>s = {1,2,3,4,5,6,7,8};
     for(auto it: s){
@@ -18,6 +21,7 @@ void sEt(){
     }
 }
 
+//printing a pair
 void pAir(){
     pair<string, string>p = {"hello","world"};
     cout<<p.first<<" "<<p.second<<endl;
@@ -25,12 +29,15 @@ void pAir(){
     cout<<p.first<<" "<<p.second<<endl;
 }
 
+//printing kist
 void liSt(){
     list<int>l = {1,2,3,4,5,6,7,8};
     for(auto it : l){
         cout<<it<<endl;
     }
 }
+
+//main function
 int main(){
     int choice;
     cout<<"\nEnter the you want to print \n1.Vector\n2.Set\n3.Pair\n4.List"<<endl;
