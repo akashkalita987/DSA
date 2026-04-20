@@ -8,7 +8,6 @@ using namespace std;
 int main() {
     // Defining the map
     map<int, tuple<char, string, float>> mp;
-
     // Inserting values
     mp[30] = make_tuple('A', "akash", 4.5f);
     
