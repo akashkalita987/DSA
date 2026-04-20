@@ -23,6 +23,5 @@ int main() {
                            << get<1>(it.second) << ", " 
                            << get<2>(it.second) << endl;
     }
-
     return 0;
 }
