@@ -10,7 +10,6 @@ int main() {
     map<int, tuple<char, string, float>> mp;
     // Inserting values
     mp[30] = make_tuple('A', "akash", 4.5f);
-    
     // Note: .insert() will not overwrite if key 30 already exists.
     // mp.insert({40, {'B', "bob", 3.2f}}); 
 
