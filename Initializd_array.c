@@ -2,6 +2,7 @@
 #include<string.h>
 int main()
 {
+    //c Program
     int a[5];
     char b[5];
     printf("\nEnter the value of a");
