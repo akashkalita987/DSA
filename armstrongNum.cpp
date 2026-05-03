@@ -1,7 +1,7 @@
 #include<iostream>
 #include <cmath>
 using namespace std;
-
+//printing armstrong number
 int main(){
     int n;
     cout<<"\nEnter the number";
