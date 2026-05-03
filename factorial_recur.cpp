@@ -6,6 +6,7 @@ int factorial(int n){
     else return n*factorial(n-1);
 }
 
+
 int main(){
     int n;
     cout<<"\nEnter the number to find the factorial:";
