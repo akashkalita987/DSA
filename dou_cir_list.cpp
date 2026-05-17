@@ -9,6 +9,8 @@ struct Node {
     Node(int val) : data(val), next(nullptr), prev(nullptr) {}
 };
 
+
+
 class DoublyCircularLinkedList {
 private:
     Node* head;
