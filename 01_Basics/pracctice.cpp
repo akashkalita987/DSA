@@ -10,4 +10,10 @@ class SinglyLinked {
     Node* head;
     public:
         SinglyLinked () : head(nullptr) {}
+
+    void insertAtHead(int val){
+        Node* newNode = new Node(val);
+        newNode->next = head;
+        head = newNode;
+    }
 };
