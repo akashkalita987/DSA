@@ -18,6 +18,7 @@ class SinglyLinked {
     }
 
     void insertAtEnd(int val){
-        
+        Node* newNode = new Node(val);
+        if(head == nullptr) { head = newNode; return;}
     }
 };
