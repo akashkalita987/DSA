@@ -19,6 +19,12 @@ class SinglyLinked {
 
     void insertAtEnd(int val){
         Node* newNode = new Node(val);
-        if(head == nullptr) { head = newNode; return;}
+        if(head == nullptr) { head = newNode; return; }
+        Node* temp = head;
+        while (temp->next != nullptr)
+        {
+            temp = temp -> next;
+        }
+        temp->next = newNode;
     }
 };
