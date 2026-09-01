@@ -16,4 +16,8 @@ class SinglyLinked {
         newNode->next = head;
         head = newNode;
     }
+
+    void insertAtEnd(int val){
+        
+    }
 };
