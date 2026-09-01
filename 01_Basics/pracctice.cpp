@@ -27,4 +27,25 @@ class SinglyLinked {
         }
         temp->next = newNode;
     }
+    void deleteValue(int val)
+    {
+        if (head == nullptr)
+            return;
+        if (head->data == val)
+        {
+            Node *toDelete = head;
+            head = head->next;
+            delete toDelete;
+            return;
+        }
+        Node *curr = head;
+        while (curr->next != nullptr && curr->next->data != val)
+            curr = curr->next;
+        if (curr->next != nullptr)
+        {
+            Node *toDelete = curr->next;
+            curr->next = curr->next->next;
+            delete toDelete;
+        }
+    }
 };
