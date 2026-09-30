@@ -2,6 +2,7 @@
 using namespace std;
 
 class SinglyLinked
+
 {
     struct Node
     {
@@ -9,6 +10,7 @@ class SinglyLinked
         Node *next;
         Node(int val) : data(val), next(nullptr) {}
     };
+
     Node *head;
 
 public:
